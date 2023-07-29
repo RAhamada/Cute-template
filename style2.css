@@ -1,0 +1,132 @@
+body, main, header, footer {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+  
+  div {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid;
+    text-align: center;
+    font-family: monospace;
+    font-size: large;
+    cursor: pointer;
+  }
+  
+  .div1 {
+    background-color: #ff99cc; 
+    border-color: rgb(255, 95, 122);
+    color: rgb(255, 14, 54);
+  }
+  
+  .div2 {
+    background-color: #99ccff; 
+    border-color: #389bfd;
+    color:#0080ff;
+  }
+  
+  .div3 {
+    background-color: #ffff99; 
+    border-color: #ffff4e;
+    color:#ffe100;
+
+  }
+
+  
+  
+  nav {
+    background-color: #ff99cc; 
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  aside {
+    margin-left: 20px;
+  }
+  
+  select {
+    width: 150px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px ;
+    background-color: #ffccff;
+    color: rgb(255, 73, 104); 
+  }
+  
+  footer {
+    background-color: #ff99cc; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 190.5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3d1ff; 
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    top: 190px;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #e6f2ff; 
+  }
+  
+  form button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4d79ff; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

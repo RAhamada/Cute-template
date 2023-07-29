@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ram">
+    <meta name="description" content="Description de la page courante en quelques lignes">
+    <title>Your favourite flavor</title>
+    <link rel="icon" type="images/png" href="images/lapin.png">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <select id="flavors">
+                <option value="strawberry">Strawberry Milk</option>
+                <option value="vanilla">Vanilla Milk</option>
+                <option value="blueberry">Blueberry Milk</option>
+            </select>
+        </aside>
+
+        <div class="div1">Strawberry Milk</div>
+        <div class="div2">Vanilla Milk</div>
+        <div class="div3">Blueberry Milk</div>
+
+        
+
+        <form id="contact-form">
+            <h2>Contacter Nous !</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Ceci est le footer du site .</p>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+                alert('Veuillez remplir le formulaire SVP.');
+                return;
+            }
+
+            console.log('Name:', nameInput.value);
+            console.log('Email:', emailInput.value);
+            console.log('Message:', messageInput.value);
+
+            nameInput.value = '';
+            emailInput.value = '';
+            messageInput.value = '';
+
+            alert('Formulaire validé avec succès!');
+        });
+    </script>
+
+</body>
+
+</html>
